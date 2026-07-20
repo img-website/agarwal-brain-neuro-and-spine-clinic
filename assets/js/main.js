@@ -90,7 +90,9 @@
       var stored = null;
       try { stored = localStorage.getItem("abnsc-theme"); } catch (e) { /* private mode */ }
       if (stored === "dark" || stored === "light") return stored;
-      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      // Default to LIGHT for first-time visitors, regardless of their OS theme.
+      // Dark mode only ever appears when the user picks it via the toggle.
+      return "light";
     }
 
     apply(current());

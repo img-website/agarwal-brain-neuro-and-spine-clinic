@@ -36,7 +36,7 @@
 
 <!-- Set the theme before first paint so there is no light/dark flash. -->
 <script>
-(function(){try{var t=localStorage.getItem("abnsc-theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark");}}catch(e){}})();
+(function(){try{if(localStorage.getItem("abnsc-theme")==="dark"){document.documentElement.classList.add("dark");}}catch(e){}})();
 </script>
 
 <!-- Structured data: helps Google show the clinic in local + rich results. -->
@@ -316,7 +316,7 @@
           <div class="relative overflow-hidden rounded-[2.5rem] border border-white/60 bg-gradient-to-br from-brand-100 to-accent-100 shadow-2xl shadow-brand-900/20 dark:border-ink-800 dark:from-ink-900 dark:to-ink-800">
             <div data-img-slot class="relative aspect-[4/5] w-full">
               <!-- Drop the doctor's photo into src="" below; the placeholder disappears automatically. -->
-              <img data-img src="" alt="Dr. Raju Agrawal, Consultant Neurologist, Agarwal Brain Neuro &amp; Spine Clinic, Alwar"
+              <img data-img src="assets/images/dr-raju-agrawal.webp" alt="Dr. Raju Agrawal, Consultant Neurologist, Agarwal Brain Neuro &amp; Spine Clinic, Alwar"
                    class="hidden h-full w-full object-cover object-top opacity-0 transition-opacity duration-700" width="640" height="800" fetchpriority="high">
 
               <div data-placeholder class="absolute inset-0 grid place-items-center bg-gradient-to-br from-brand-100 via-white to-accent-100 dark:from-ink-900 dark:via-ink-900 dark:to-ink-800">

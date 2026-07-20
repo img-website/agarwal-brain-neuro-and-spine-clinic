@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
 <script>
-(function(){try{var t=localStorage.getItem("abnsc-theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark");}}catch(e){}})();
+(function(){try{if(localStorage.getItem("abnsc-theme")==="dark"){document.documentElement.classList.add("dark");}}catch(e){}})();
 </script>
 <script type="application/ld+json">
 {
@@ -193,7 +193,7 @@
         <div data-reveal data-reveal-delay="200" class="relative opacity-0 transition-all duration-700">
           <div class="relative overflow-hidden rounded-[2.5rem] border border-white/60 shadow-2xl shadow-brand-900/20 dark:border-ink-800">
             <div data-img-slot class="relative aspect-[4/5] w-full">
-              <img data-img src="" alt="Portrait of Dr. Raju Agrawal, Consultant Neurologist, Alwar" class="hidden h-full w-full object-cover object-top opacity-0 transition-opacity duration-700" width="640" height="800">
+              <img data-img src="assets/images/dr-raju-agrawal.webp" alt="Portrait of Dr. Raju Agrawal, Consultant Neurologist, Alwar" class="hidden h-full w-full object-cover object-top opacity-0 transition-opacity duration-700" width="640" height="800">
               <div data-placeholder class="absolute inset-0 grid place-items-center bg-gradient-to-br from-brand-100 via-white to-accent-100 dark:from-ink-900 dark:via-ink-900 dark:to-ink-800">
                 <div class="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-white/60 to-transparent bg-[length:200%_100%] dark:via-white/5" aria-hidden="true"></div>
                 <div class="relative flex flex-col items-center gap-4 px-8 text-center">
